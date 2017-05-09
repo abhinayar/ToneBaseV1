@@ -67,13 +67,13 @@ var blockData = {
     video_part : "(Part 1 of 3)"
   },
   1 : {
-    block_name : "David Tanenbaum",
-    block_bg : "/images/videoBlocks/davidTanenbaum.jpg",
+    block_name : "Carlo Marchione",
+    block_bg : "/images/videoBlocks/carloMarchione.jpg",
     block_bg_align : "center center",
     block_type : "Video",
     block_size : "squareRect",
-    video_length : "3:14",
-    video_name : "Takemitsu - David Tanenbaum",
+    video_length : "4:13",
+    video_name : "E. Morricone: La Legganda/Once Upon",
     video_part : "(Part 1 of 3)"
   },
   2 : {
@@ -106,16 +106,6 @@ var blockData = {
     video_name : "",
     video_part : ""
   },
-  4 : {
-    block_name : "",
-    block_bg : "/images/adBlocks/DiDadarrio.png",
-    block_bg_align : "center center",
-    block_type : "Ad",
-    block_size : "squareAdSmall",
-    video_length : "",
-    video_name : "",
-    video_part : ""
-  },
   5 : {
     block_name : "Ana Vidovic",
     block_bg : "/images/videoBlocks/anaVidovic.jpg",
@@ -131,12 +121,12 @@ var blockData = {
     block_bg : "/images/newsBlocks/survey.jpg",
     block_bg_align : "center center",
     block_type : "News",
-    block_size : "squareRect",
+    block_size : "wideRect",
     video_length : "",
     video_name : "",
     video_part : "",
     news_title : "Tell us how we're doing - we love your feedback!",
-    news_subtitle : "Give us your feedback and win a $50 Amazon gift card.",
+    news_subtitle : "Fill out our survey to win a $50 Amazon gift card!",
   },
   7 : {
     block_name : "",
@@ -144,6 +134,126 @@ var blockData = {
     block_bg_align : "center center",
     block_type : "Ad",
     block_size : "squareAdFill",
+    video_length : "",
+    video_name : "",
+    video_part : ""
+  },
+  8 : {
+    block_name : "David Russell",
+    block_bg : "/images/videoBlocks/davidRussell.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "squareRect",
+    video_length : "5:23",
+    video_name : "Three Celtic Pieces - David Russell",
+    video_part : "(Part 2 of 4)"
+  },
+  9 : {
+    block_name : "Frederic Hand",
+    block_bg : "/images/videoBlocks/fredericHand.jpg",
+    block_bg_align : "top center",
+    block_type : "Video",
+    block_size : "wideRect",
+    video_length : "3:41",
+    video_name : "Missing Her - Frederic Hand",
+    video_part : "(Part 3 of 6)"
+  },
+  10 : {
+    block_name : "Marco Tamayo",
+    block_bg : "/images/videoBlocks/marcoTamayo.jpg",
+    block_bg_align : "top center",
+    block_type : "Video",
+    block_size : "wideRect",
+    video_length : "3:20",
+    video_name : "El Colibri - J. Sagreras",
+    video_part : "(Part 1 of 3)"
+  },
+  11 : {
+    block_name : "Sanel Redzic",
+    block_bg : "/images/videoBlocks/sanelRedzic.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "squareRect",
+    video_length : "4:21",
+    video_name : "Music of Memory by Nicholas Maw",
+    video_part : "(Part 3 of 3)"
+  },
+  12 : {
+    block_name : "Tariq Harb",
+    block_bg : "/images/videoBlocks/tariqHarb.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "longRect",
+    video_length : "5:12",
+    video_name : "J.S. Bach: Cello Suite No. 1, III",
+    video_part : "(Part 2 of 5)"
+  },
+  13 : {
+    block_name : "",
+    block_bg : "/images/adBlocks/Yamaha.jpg",
+    block_bg_align : "center center",
+    block_type : "Ad",
+    block_size : "squareAdFill",
+    video_length : "",
+    video_name : "",
+    video_part : ""
+  },
+  14 : {
+    block_name : "Xuefei Yang",
+    block_bg : "/images/videoBlocks/xuefeiYang.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "longRect",
+    video_length : "4:44",
+    video_name : "J.S. Bach - Prelude BWV846",
+    video_part : "(Part 1 of 6)"
+  },
+  15 : {
+    block_name : "William Kanengiser",
+    block_bg : "/images/videoBlocks/williamKanengiser.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "wideRect",
+    video_length : "3:13",
+    video_name : "Wolfgang Mozart : Rondo Alla Turca",
+    video_part : "(Part 1 of 3)"
+  },
+  16 : {
+    block_name : "Joseph Palmer",
+    block_bg : "/images/videoBlocks/josephPalmer.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "squareRect",
+    video_length : "1:00:23",
+    video_name : "The One & Only WatchMePlay",
+    video_part : "(Part 1 of Infinity)"
+  },
+  17 : {
+    block_name : "",
+    block_bg : "/images/adBlocks/Ibanez.jpg",
+    block_bg_align : "center center",
+    block_type : "Ad",
+    block_size : "squareAdSmall",
+    video_length : "",
+    video_name : "",
+    video_part : ""
+  },
+  18 : {
+    block_name : "Eliot Fisk",
+    block_bg : "/images/videoBlocks/eliotFisk.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "wideRect",
+    video_length : "4:49",
+    video_name : "Paganini's Caprice #24",
+    video_part : "(Part 2 of 3)"
+  },
+  17 : {
+    block_name : "",
+    block_bg : "/images/adBlocks/Taylor.jpg",
+    block_bg_align : "center center",
+    block_type : "Ad",
+    block_size : "squareAdSmall",
     video_length : "",
     video_name : "",
     video_part : ""
