@@ -137,7 +137,7 @@ var blockData = {
     block_bg : "/images/adBlocks/Gibson.jpg",
     block_bg_align : "center center",
     block_type : "Ad",
-    block_size : "squareAdFill",
+    block_size : "squareAdLong",
     video_length : "",
     video_name : "",
     video_part : ""
@@ -261,6 +261,26 @@ var blockData = {
     video_length : "",
     video_name : "",
     video_part : ""
+  },
+  18 : {
+    block_name : "",
+    block_bg : "/images/adBlocks/Fender.jpg",
+    block_bg_align : "center center",
+    block_type : "Ad",
+    block_size : "squareAdFill",
+    video_length : "",
+    video_name : "",
+    video_part : ""
+  },
+  19 : {
+    block_name : "Ana Vidovic",
+    block_bg : "/images/videoBlocks/anaVidovic.jpg",
+    block_bg_align : "center center",
+    block_type : "Video",
+    block_size : "wideRect",
+    video_length : "4:24",
+    video_name : "Asturias by Isaac Albeniz",
+    video_part : "(Part 2 of 4)"
   },
 }
 
