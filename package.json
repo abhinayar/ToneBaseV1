@@ -4,11 +4,12 @@
   "description": "Absolute boilerplate test site for ToneBase application",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/abhinayar/ToneBaseTest.git"
+    "url": "git+https://github.com/abhinayar/ToneBaseV1.git"
   },
   "keywords": [
     "ToneBase",
@@ -25,6 +26,11 @@
   "devDependencies": {
     "bower": "^1.8.0",
     "express": "^4.15.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.1"
+  },
+  "dependencies": {
+    "express": "4.15.2",
     "path": "^0.12.7",
     "pug": "^2.0.0-rc.1"
   }
