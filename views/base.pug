@@ -1,0 +1,123 @@
+doctype 5
+html
+  head
+    //inherit page title from router
+    title= "ToneBase | " + pageTitle
+    
+    if !local
+      //CSS Dependencies:
+        Normalize (standardize CSS across browsers/devices)
+      link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css')
+      //App CSS
+      link(rel="stylesheet", href="/css/main.css")
+
+      //Fonts (Roboto 300, 400, 700 + Rubik 400, 700.)
+      //TODO: Remove unused.
+      link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900|Rubik:400,700&amp;subset=latin-ext")
+      link(rel="stylesheet", href="/css/ionicons.min.css")
+
+      //Scripts in head
+        Modernizr, browser support
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js')  
+      //jQuery
+      script(src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous")  
+    else 
+      link(rel='stylesheet', href='/css/local/normalize.min.css')
+      link(rel="stylesheet", href="/css/main.css")
+      link(rel="stylesheet", href="/css/local/googleFonts.css")
+      script(src='/js/local/modernizr.min.js')  
+      script(src="/js/local/jQuery.min.js")
+    
+    //Default Meta Tags
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='author', content='Abhi Nayar')
+    meta(name="copyright" content="2017")
+    meta(name="robots" content="index, follow")
+    meta(name="robots" content="noodp, noydir")
+    meta(name="Language" content="English")
+    meta(name="Copyright" content="Abhi Nayar | ToneBase Inc.")
+    meta(name="Publisher" content="Abhi Nayar")
+    meta(name="Revisit-After" content="5 days")
+    meta(name="distribution" content="Global")
+    meta(name="country" content="USA")
+    meta(name="MSSmartTagsPreventParsing" content="true")
+    meta(name="rating" content="General")
+    meta(name="ms.locale" content="EN-US")
+    
+    //Site Specific Meta Tags
+    meta(name="url" content="https://tone-base.com")
+    meta(name="subject" content="")
+    meta(name='description', content="")
+    meta(name="category" content="homepage")
+    meta(name="Keywords" content="")
+    
+    //Favicon
+    link(rel="icon", type="image/ico", sizes="32x32", href="/images/favicon.ico")
+    
+    //Google Analytics
+    //HotJar
+    //Other Analytics
+  //Jade Mixins, etc.
+  mixin space()
+    | !{' '}
+  body(id=pageId)
+    div#sidebarMain.sidebar.main
+      div.sidebar.navigation
+        div.navItem.logo
+          a.logo.logoLink(href="/home")
+            img.logo.logoImage(src="/images/logo.png", alt="ToneBase Logo V1")
+        for navItem in navItems
+          -var title = navItem.title, icon = navItem.icon
+          if pageTitle.toLowerCase() == title
+            div(class= "curr navItem " + title)
+               a(class= "navLink " + title , href= "/" + title)
+                span(class= "navIcon " + title)
+                  svg(class= "navSVG " + title, viewBox="0 0 300 300")
+                    path(id= title + "SVGPath", d= navItem.icon.d)
+                span(class= "navText " + title)= title
+          else
+            div(class= "navItem " + title)
+              a(class= "navLink " + title , href= "/" + title)
+                span(class= "navIcon " + title)
+                  svg(class= "navSVG " + title, viewBox="0 0 300 300")
+                    path(id= title + "SVGPath", d= navItem.icon.d)
+                span(class= "navText " + title)= title
+    div#pageContent.pageBody
+      div.pageContainer
+        div#header.header
+          div.headerContent
+            div.leftContent
+              div.mainTitle
+                h1= pageTitle
+              div.titleUnderline
+            div.rightContent.secFont
+              div.row
+                div.search
+                div.profile.rightItem
+                  a.profileLink.rightLink(href="/home/profile")
+                    span.linkImg
+                      img.profilePhoto(src="/images/common/profile.jpg")
+                    span.text.light= user.name
+                      span.icon.entypo-down-open-mini
+                div.alert.rightItem
+                  a.alertLink.rightLink(href="/home/alerts")
+                    span.linkImg
+                      svg(viewBox= icons.alerts.viewbox)
+                        path(id="alerts", d= icons.alerts.d)
+                    span.text.light Alerts
+                      span.icon.entypo-down-open-mini
+        div#contentWrapper        
+          block content 
+    //Scripts
+    //Packery
+    script(src="https://unpkg.com/packery@2.1/dist/packery.pkgd.min.js")
+    //Main
+    script(src='/js/main.js')
+    
+        
+        
+        

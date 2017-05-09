@@ -1,0 +1,54 @@
+extends base
+block content
+  div#optionSelect.options
+    div.optionBar
+      ul.optionList
+        li.optionListItem
+          a.optionBarLink.active(href="") Recommended For You
+        li.optionListItem
+          a.optionBarLink(href="") Following
+        li.optionListItem
+          a.optionBarLink(href="") Popular
+        li.optionListItem
+          a.optionBarLink(href="") Most Recent
+  div#videoGrid(data-packery='{ "itemSelector": ".contentBlock" }')
+    for item in blockData
+      - var block_type = item.block_type, block_size = item.block_size, block_bg = item.block_bg, block_name = item.block_name, block_bg_pos = item.block_bg_align
+      if block_type === "Video"
+        -var video_name = item.video_name, video_length = item.video_length, video_part = item.video_part
+        div(class= "contentBlock " + block_type + " " + block_size)
+          div.brick(class= block_name)
+            div.brickContent
+              div.videoLengthWrapper
+                div.videoLength= video_length
+              div.brickNameContent
+                div.brickType= block_type
+                div.brickName= block_name
+              div.videoInfo.brickInfo
+                div.videoName.name= video_name
+                div.videoPart.part= video_part
+              div.playIconWrapper
+                div.playIcon
+                  img(src="/images/videoBlocks/playIcon.png" alt="Play")
+            div.brickBg(style= "background-image: url(" + block_bg + "); background-position: " + block_bg_pos)
+      else if block_type === "News"
+        -var news_title = item.news_title, news_subtitle = item.news_subtitle
+        div(class= "contentBlock " + block_type + " " + block_size)
+          div.brick(class= block_name)
+            div.brickContent
+              div.brickNameContent
+                div.brickType= block_type
+                div.brickName= block_name
+              div.newsInfo.brickInfo
+                //div.newsName.name= news_title
+                div.newsSubName.part= news_subtitle
+            div.brickBg(style= "background-image: url(" + block_bg + "); background-position: " + background_pos)
+      else if block_type === "Ad"
+        div(class= "contentBlock " + block_type + " " + block_size)
+          div.brick(class= block_name)
+            div.brickContent
+              div.brickName= block_name
+            div.brickBg(style= "background-image: url(" + block_bg + "); background-position: " + block_bg_pos)
+            
+          
+  

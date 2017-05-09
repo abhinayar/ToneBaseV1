@@ -1,0 +1,31 @@
+{
+  "name": "tonebase-dev_test",
+  "version": "1.0.0",
+  "description": "Absolute boilerplate test site for ToneBase application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhinayar/ToneBaseTest.git"
+  },
+  "keywords": [
+    "ToneBase",
+    "YEI",
+    "Yale",
+    "Music"
+  ],
+  "author": "Abhi Nayar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhinayar/ToneBaseTest/issues"
+  },
+  "homepage": "https://github.com/abhinayar/ToneBaseTest#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.15.2",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.1"
+  }
+}

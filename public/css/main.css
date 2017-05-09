@@ -1,0 +1,345 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+.secFont {
+  font-family: 'Roboto', Arial, sans-serif;
+} .primFont {
+  font-family: 'Rubik', Montserrat, Roboto, Arial, sans-serif;
+} [class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+.light {
+  font-weight: 300;
+} .medium {
+  font-weight: 400;
+} .bold {
+  font-weight: 700;
+} .black {
+  font-weight: 900;
+}
+
+body {
+  background-color: #121314;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar.main {
+  width: 140px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1c1c1f;
+  text-align: center;
+  overflow: hidden;
+  font-size: 14px;
+  fill: currentColor;
+  color: #fff;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.navItem {
+  height: 90px;
+  position: relative;
+  backgroundColor: inherit;
+  border-top: 1px solid #19191b;
+  border-bottom: 1px solid #19191b;
+  padding-top: 20px;
+  opacity: 0.5;
+  font-weight: 100;
+} .navItem:hover {
+  opacity: 1;
+  background-color: #1d1d1f;
+  transition: all 200ms ease;
+} .navItem.curr, .navItem.curr:hover {
+  border: none;
+  background-color: #0c0c0f;
+  opacity: 1;
+  font-weight: 400;
+  cursor: default;
+}
+
+.navItem:before {
+  content: '';
+  height: 90px;
+  width: 7px;
+  background-color: #e14f3d;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+} .navItem.curr:before {
+  opacity: 1;
+}
+
+.navItem.logo {
+  max-width: 100%;
+  height: 100px;
+  margin-top: 16%;
+  margin-bottom: 12%;
+  padding-top: 0;
+  border: none;
+  opacity: 1;
+} .navItem.logo a, .navItem.logo img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+} 
+
+.navItem a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+  cursor: inherit;
+} 
+
+.navIcon, .navText {
+  display: block;
+}
+.navText {
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+
+span.navIcon svg {
+  fill: #fff;
+  width: 25px;
+  height: auto;
+}
+
+.pageBody {
+  padding-left: 140px;
+} .pageContainer {
+  max-width: 1090px;
+  margin: 0 auto;
+  color: #fff;
+}
+.header {
+  width: 100%;
+} .headerContent {
+  height: 150px;
+  padding-top: 50px;
+  border-bottom: 1px solid rgba(255,255,255, 0.05);
+} .header .leftContent {
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+} .header .rightContent {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+
+.header .mainTitle h1 {
+  margin: 0;
+  font-family: 'Rubik', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 700;
+} .header .titleUnderline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  height: 7px;
+  background-color: #e14f3d;
+  content: '';
+  display: block;
+}
+
+.header .rightContent .row {
+  width: 100%;
+} .header .rightContent .rightItem {
+  display: inline-block;
+  float: right;
+}
+
+.header .rightLink {
+  display: block;
+  text-align: center;
+  margin-left: 40px;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.5;
+} .header .rightLink:hover {
+  opacity: 1;
+  transition: all 120ms ease;
+} .header .rightLink .linkImg {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+} .header .rightLink .linkImg svg {
+  width: 40px;
+  height: auto;
+  margin-top: 13px;
+  fill: #e14f3d;
+} .header .rightLink .text {
+  display: block;
+  margin-top: 10px;
+  text-transform: uppercase;
+} .header .rightLink .text .icon {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+#optionSelect {
+  margin: 40px 0;
+  font-family: 'Roboto';
+  font-weight: 300;
+} .optionBar ul, .optionBar .optionListItem {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+} .optionBar .optionListItem {
+  margin-right: 25px;
+  margin-left: 25px;
+} .optionBar .optionListItem:first-of-type {
+  margin-left: 0;
+} .optionBar .optionBarLink {
+  font-size: 18px;
+  font-family: inherit;
+  color: #555;
+  text-decoration: none;
+} .optionBar .optionBarLink.active {
+  background: #fff;
+  padding: 12px 35px;
+  color: #e14f3d;
+  cursor: default;
+} .optionBar .optionBarLink:hover {
+  color: #e14f3d;
+  transform: all 150ms ease;
+}
+
+#videoGrid {
+  width: 101%;
+  height: 100%;
+  margin-left: -0.5%;
+} .contentBlock {
+  width: 420px;
+  height: 420px;
+  margin: 5px;
+  float: left;
+} .wideRect {
+  height: 220px;
+} .longRect {
+  width: 220px;
+} .squareAdSmall {
+  width: 190px;
+  height: 190px;
+} .squareAdFill {
+  width: 220px;
+  height: 190px;
+}
+
+
+.contentBlock .brick {
+  width: 100%;
+  height: 100%;
+} .contentBlock .brickContent {
+  width: 100%;
+  height: 100%;
+  border: 12px solid rgba(225,79,61, 0.4);
+  background-color: rgba(0,0,0,0.3);
+  position: absolute;
+  z-index: 2;
+} .contentBlock.Ad .brickContent {
+  background-color: transparent;
+} .contentBlock .brickBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-origin: border-box;
+} 
+
+.contentBlock .brickNameContent {
+  position: relative;
+} .contentBlock .brickNameContent .brickType, .contentBlock .videoLength {
+  color: #e14f3d;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 300;
+} .contentBlock .brickNameContent {
+  top: 19px;
+  left: 15px;
+} .contentBlock .brickNameContent .brickName {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Rubik';
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 185px;
+  margin-top: 10px;
+} 
+
+.contentBlock .videoLengthWrapper {
+  position: relative;
+} .contentBlock .videoLength {
+  font-size: 16px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.contentBlock .brickInfo {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+} .contentBlock .brickInfo .name, .contentBlock .brickInfo .part {
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  line-height: 1.5em;
+} .contentBlock .brickInfo .part {
+  font-style: italic;
+  color: #e14f3d;
+  font-weight: 300;
+  max-width: 190px;
+}
+
+.contentBlock .playIcon img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+} .contentBlock.wideRect .playIcon {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+} .contentBlock.longRect .playIcon {
+  position: absolute;
+  top: 48%;
+  left: 35%;
+} .contentBlock.squareRect .playIcon img {
+  width: 64px;
+  height: 64px;
+} .contentBlock.squareRect .playIcon {
+  position: absolute;
+  left: 42%;
+  top: 45%;
+}
+
+.contentBlock.Video .brick:hover {
+  cursor: pointer;
+} .contentBlock.Video .brick:hover .brickContent {
+  background-color: rgba(0,0,0,0.6);
+  transition: all 250ms ease;
+} .contentBlock.Video .brick:hover .playIcon img {
+  opacity: 0.9;
+  transition: all 300ms ease;
+}
