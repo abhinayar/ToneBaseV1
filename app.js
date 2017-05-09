@@ -271,8 +271,23 @@ app.get('/home', function(req, res){
     },
     blockData : blockData
   })
+});
+
+app.get('/', function(req, res){
+  res.render('home', {
+    local: true,
+    pageTitle: "Home", 
+    navItems: navItems,
+    icons: icons,
+    user: {
+      'name' : 'Abhi'
+    },
+    blockData : blockData
+  })
 })
 
+/*
 app.listen(8000, function(){
   console.log("Example app listening on port 8000!")
 });
+*/
